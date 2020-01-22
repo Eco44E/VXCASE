@@ -11,7 +11,6 @@ class Vendas extends Model
 {
   public $timestamps = false;
 
-
     public $table = 'vendas';
     protected $fillable = [
       'id',
