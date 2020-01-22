@@ -9,28 +9,28 @@
 
 Instruções para executar o projeto:
 
-1 Clone este repositório:
+1 - Clone este repositório:
 
 git https://github.com/Eco44E/VXCASE.git
 
-2 Acesse o diretório:
+2 - Acesse o diretório:
 
 cd repositório
 
-3 Rode o composer para instalar as dependências:
+3 - Rode o composer para instalar as dependências:
 
 composer install
 
-4 Crie o banco de dados:
+4 - Crie o banco de dados:
 
 mysql -u root -p
 create database vxcase
 
-5 Execute o script abaixo para criar as tabelas:
+5 - Execute o script abaixo para criar as tabelas:
 
 Script: https://drive.google.com/file/d/1g_oBKJlJf9l_Jkp1SfG1ECl5MHf8-Gfw/view?usp=sharing
 
-6: Popule a tabela de produtos com script de exemplo abaixo:
+6 - Popule a tabela de produtos com script de exemplo abaixo:
 
 INSERT INTO `vxcase2`.`produtos` (`id`, `nome`, `preco`, `entrega`) VALUES ('1', 'Cabo Dragon', '70.00', '10');
 INSERT INTO `vxcase2`.`produtos` (`id`, `nome`, `preco`, `entrega`) VALUES ('2', 'Película do Futuro', '50.00', '7');
@@ -38,13 +38,17 @@ INSERT INTO `vxcase2`.`produtos` (`id`, `nome`, `preco`, `entrega`) VALUES ('3',
 INSERT INTO `vxcase2`.`produtos` (`id`, `nome`, `preco`, `entrega`) VALUES ('4', 'Cabo do Futuro', '20.00', '4');
 INSERT INTO `vxcase2`.`produtos` (`id`, `nome`, `preco`, `entrega`) VALUES ('5', 'Películo Invisível', '30.00', '15');
 
-7 Abra o projeto e Configure o arquivo .env:
+7 - Abra o projeto e Configure o arquivo .env:
 
 DB_DATABASE=db_estoque_laravel
 DB_USERNAME=root
 DB_PASSWORD=Suporte99
 
-9 Suba no servidor:
+9 - Suba no servidor:
 
 php artisan serve
+
+10 - Caso um erro seja gerado informando que o artisan não localizou o arquivo vendor/autoload.php execute o comando abaixo:
+
+composer dump-autoload
 
